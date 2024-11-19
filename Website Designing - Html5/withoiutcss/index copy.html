@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="icon" href="../icon/registration-form.png" type="image/x-icon"> <!-- Favicon added -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Registration Form</h1>
+        <form id="registration-form">
+            <!-- First Name -->
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"
+                       required pattern="[A-Za-z]{3,6}" title="Only alphabets are allowed. Minimum 3 and maximum 6 characters.">
+            </div>
+            <!-- Last Name -->
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"
+                       required pattern="[A-Za-z]{3,6}" title="Only alphabets are allowed. 3 and maximum 6 characters.">
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="It should contain @..."
+                       required>
+            </div>
+            <!-- Mobile -->
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Only 10 digits are allowed"
+                       required pattern="\d{10}" title="Mobile number must be exactly 10 digits.">
+            </div>
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+            <!-- City -->
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city"
+                       required pattern="[A-Za-z\s]+" title="Only alphabets and spaces are allowed.">
+            </div>
+            <!-- Area PIN -->
+            <div class="form-group">
+                <label for="area-pin">Area PIN:</label>
+                <input type="text" id="area-pin" name="area-pin" placeholder="Enter your PIN"
+                       required pattern="\d{6}" title="PIN must be exactly 6 digits.">
+            </div>
+            <!-- State -->
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state"
+                       required pattern="[A-Za-z\s]+" title="Only alphabets and spaces are allowed.">
+            </div>
+            <!-- Qualification -->
+            <div class="form-group">
+                <label for="qualification">Qualification:</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">Select Qualification</option>
+                    <option value="High School">High School</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                </select>
+            </div>
+            <!-- Specialization -->
+            <div class="form-group">
+                <label>Specialization:</label>
+                <div>
+                    <input type="checkbox" id="cs" name="specialization" value="Computer Science">
+                    <label for="cs">Computer Science</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="it" name="specialization" value="Information Technology">
+                    <label for="it">Information Technology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ca" name="specialization" value="Computer Architecture">
+                    <label for="ca">Computer Architecture</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tc" name="specialization" value="Tele Communication">
+                    <label for="tc">Tele Communication</label>
+                </div>
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"
+                       required minlength="6" title="Password must be at least 6 characters long.">
+            </div>
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
