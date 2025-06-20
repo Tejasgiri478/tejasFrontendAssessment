@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Body styling */
 body {
     background-color: #f0f8ff;/* Light blue background */
@@ -8,6 +9,30 @@ body {
 .card {
     border-radius: 10px;
     overflow: hidden;
+=======
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+>>>>>>> 078ad9f2e418bef30e5e72ff62b650914c6275ff
 }
 
 .card-header {
@@ -15,6 +40,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+<<<<<<< HEAD
 }
 
 /* Input group styling */
@@ -29,6 +55,26 @@ body {
     border: 2px solid #ddd;
     transition: all 0.3s ease;
     margin-bottom: 15px;
+=======
+    padding-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+#todoInput {
+    flex: 1;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+>>>>>>> 078ad9f2e418bef30e5e72ff62b650914c6275ff
 }
 
 #todoInput:focus {
@@ -38,13 +84,24 @@ body {
 }
 
 .btn-success {
+<<<<<<< HEAD
     padding: 5px;
     border-radius: 0 10px 10px 0;
     border: 2px solid #ddd;
+=======
+    padding: 10px 15px;
+    border-radius: 0 8px 8px 0;
+    border: 2px solid #ddd;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+>>>>>>> 078ad9f2e418bef30e5e72ff62b650914c6275ff
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-success:hover {
+<<<<<<< HEAD
     background-color: #28a745;
     transform: scale(1.05);
 }
@@ -68,6 +125,33 @@ body {
 }
 
 /* Close button styling */
+=======
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.list-group {
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+}
+
+>>>>>>> 078ad9f2e418bef30e5e72ff62b650914c6275ff
 .close-btn {
     background-color: transparent;
     border: none;
@@ -81,8 +165,52 @@ body {
     color: #ff0000;
 }
 
+<<<<<<< HEAD
 /* @media only screen and (max-width:768px){
  .input-group{
     display: block;
 }
 } */
+=======
+/* Media Queries for Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        max-width: 400px;
+    }
+
+    #todoInput {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn-success {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    #todoInput {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .btn-success {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+>>>>>>> 078ad9f2e418bef30e5e72ff62b650914c6275ff
